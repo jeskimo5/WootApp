@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="WootAlert.exe" version="1.0.0.14" publicKeyToken="e7c7661535fd5233" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="woot.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WootAlert" version="0.9.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="WootAlert.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hardcodet.Wpf.TaskbarNotification.dll" size="46080">
+      <assemblyIdentity name="Hardcodet.Wpf.TaskbarNotification" version="1.0.4.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>S9wn+toqc9PQykbVMJbI9cD/3Zs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WootAlert.exe" size="334848">
+      <assemblyIdentity name="WootAlert" version="0.9.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>puRimCLQn1G6OBR4ZHv897GkS5U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="woot.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>41v5/kcZR3lhp6pURj9bZ26APLw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=HAL3\Mitchell Harris" issuerKeyHash="52465c02e682b8b11f8dae3e5b2faa6e69ce8aee" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>dBJNktxfxZM+FyAZn+VWqoHFT+E=</DigestValue></Reference></SignedInfo><SignatureValue>ptkynrEa6rdKYzQmYRITsM3QdmplU9W/+awXvmvgpat2kxPkFA7NY36YWQnDWYhdfSBR9UsN7wSfXZCk595o+tFlg37Zp03oaTgv9i0IxOPwpoiZyxSVeZE6CfQw037+ZUq/OmMVxjSMKzWZkEYwZA53C7IQWvDbMKaeLGfDmK0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yjrzogcWyP2PYOaOH+Qjychp2eIwpwoqNFfouKLOxgcMPHWrqp9a5Ih0VPsC9S/1zM2OCA4bB2fKu3xVjw2NMvjTkQs9xok0fEQsRsKgdnyzGhuzkrA3GGCgWy4cwaCFzUPHQvgnN2xCKHDaaV4EnK7z3CZrscaCudIpnaIdaME=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e14fc581aa56e59f1920173e93c55fdc924d1274" Description="" Url=""><as:assemblyIdentity name="WootAlert.exe" version="1.0.0.14" publicKeyToken="e7c7661535fd5233" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HAL3\Mitchell Harris</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>F3PXy7K9S5DS2vVsiUtIm4tXbc0=</DigestValue></Reference></SignedInfo><SignatureValue>HFkDpTlVYaEyDfcAgRT9UnpeD3/bdTDCfYQly3BVbBMqzH3tUamJanLIhiaWlEPun3/cIFdKX7WhaCVZc5b9bmcNlkQci0qwnJYlWua4CjnhUrT+K0jes5rvi+bFGUUAcOelsXcbARMbIYWvt3U3Rn3lAOETTkfRz9saX4k5Nn0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yjrzogcWyP2PYOaOH+Qjychp2eIwpwoqNFfouKLOxgcMPHWrqp9a5Ih0VPsC9S/1zM2OCA4bB2fKu3xVjw2NMvjTkQs9xok0fEQsRsKgdnyzGhuzkrA3GGCgWy4cwaCFzUPHQvgnN2xCKHDaaV4EnK7z3CZrscaCudIpnaIdaME=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAU6gAwIBAgIQQhu1I+CQ8bBLIb0c7y09XDAJBgUrDgMCHQUAMDMxMTAvBgNVBAMeKABIAEEATAAzAFwATQBpAHQAYwBoAGUAbABsACAASABhAHIAcgBpAHMwHhcNMTExMjA1MTk0MDMzWhcNMTIxMjA1MDE0MDMzWjAzMTEwLwYDVQQDHigASABBAEwAMwBcAE0AaQB0AGMAaABlAGwAbAAgAEgAYQByAHIAaQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKOvOiBxbI/Y9g5o4f5CPJyGnZ4jCnCio0V+i4os7GBww8dauqn1rkiHRU+wL1L/XMzY4IDhsHZ8q7fFWPDY0y+NORCz3GiTR8RCxGwqB2fLMaG7OSsDcYYKBbLhzBoIXNQ8dC+Cc3bEIocNppXgScrvPcJmuxxoK50imdoh1owQIDAQABMAkGBSsOAwIdBQADgYEAqQpsxny0rZW12EYPdPxS6Y4eRlpvsaJLOGsuW1BMgWtdArapYIXBCZcw+GSkLrlRhx92axMLbGBlTx5bgpC03FYpQ1I4v2cnOrS+UpGI8IZ0PJcA6gOGdbe5eCrscAdv4M8+qUwZmMyAfNxHyZWXoGQQqiVUAVJ1wW1Qdz4jTaA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,5 @@
+﻿C:\Users\Jesse Shaw\Documents\Visual Studio 2010\Projects\WootApp\WpfApplication1\bin\Release
+C:\Users\Jesse Shaw\Documents\Visual Studio 2010\Projects\WootApp\WpfApplication1\bin\Release
+C:\Users\Jesse Shaw\Documents\Visual Studio 2010\Projects\WootApp\WpfApplication1\bin\Release
+C:\Users\Jesse Shaw\Documents\Visual Studio 2010\Projects\WootApp\WpfApplication1\bin\Release
+C:\Users\Jesse Shaw\Documents\Visual Studio 2010\Projects\WootApp\WpfApplication1\bin\Release
